@@ -5,8 +5,8 @@
 /* Seleccion de body */
 body { 
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Cambia tipografia */
-    margin: 0; /* Elimina todo  el margen predefinido */
-    padding: 0; /* Elimina todo el relleno de los elementos */
+    margin: 0px; /* Elimina todo  el margen predefinido */
+    padding: 0px; /* Elimina todo el relleno de los elementos */
     background-color: #191F29;
     color: beige; /* Establece el color del texto */
 }
@@ -32,6 +32,7 @@ nav ul li {
 nav ul li a {
     color: beige; /* Color a elemento anchor */
     text-decoration: none; /* Quita el subrayado de los enlaces */
+    font-size: 20px;
 }
 section {
     padding: 40px 0; /* Añade relleno superior e inferior */
@@ -51,7 +52,7 @@ section {
     display: inline-block;
     padding-block: 5px;
     padding-inline: 12px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 #banner p {
     font-size: 24px; /* Establece tamaño de p */
@@ -60,19 +61,21 @@ section {
     display: inline-block;
     padding-block: 5px;
     padding-inline: 12px;
-    border-radius: 15px;
+    border-radius: 10px;
 }
 .btn {
-    background-color: beige; /* Color de fondo del botón */
-    color: darkcyan; /* Color del texto del botón */
+    background-color: #0F0D0D; /* Color de fondo del botón */
+    color: beige; /* Color del texto del botón */
     padding: 10px 20px; /* Relleno del botón */
     text-decoration: none; /* Quita decoración del enlace */
-    border-radius: 25px;
+    border-radius: 10px;
     font-size: 20px;
+    border: 2px solid;
 }
 /* Estilo cuando pasa elpuntero sobre el botón */
 .btn:hover {
-    background-color: lightsteelblue; /* Establece color de fondo en hover del botón */
+    color:#0F0D0D;
+    background-color: beige; /* Establece color de fondo en hover del botón */
 }
 .destinos-conteiner {
     display: flex; /* Coloca las cajas como si fueran celdas de tablas */
@@ -232,15 +235,15 @@ footer {
 }
 .img-popup6 {
     width: 40%;
-    background-image: url(../img/BigBen.jpg);
+    background-image: url(../img/MachuPicchu.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: 35%;
     border-top-left-radius: 16px;
     border-bottom-left-radius: 16px;
 }
 .img-popup7 {
     width: 40%;
-    background-image: url(../img/TajMahal.jpeg);
+    background-image: url(../img/IslaDePascua.jpg);
     background-size: cover;
     background-position: center;
     border-top-left-radius: 16px;
@@ -302,6 +305,66 @@ footer {
         padding: 80px;
     }
 }
+/* Aquí van los estilos del paquete */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.card {
+    width: 450px;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+    overflow: hidden;
+    color: #0F0D0D;
+    transition: transform 0.4s ease;
+}
+.card:hover {
+    transform: translateY(-3%);
+}
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.card-content {
+    padding-inline: 20px;
+}
+.card-content h3 {
+    font-size: 24px;
+    margin-bottom: -8px;
+}
+.card-content p {
+    font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 6px;
+    color: #0F0D0D;
+}
+.card-content .country-list {
+    color: gray;
+}
+.card-content ul {
+    font-size: 18px;
+    margin-top: -8px;
+}
+.card-button {
+    display: inline-block;
+    margin-bottom: 20px;
+    background-color: #0F0D0D;
+    color: beige;
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: 2px solid;
+}
+.card-button:hover {
+    background-color: beige;
+    color: #0F0D0D;
+}
+
 
 
 
