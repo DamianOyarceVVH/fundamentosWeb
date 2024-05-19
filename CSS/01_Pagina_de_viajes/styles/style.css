@@ -305,7 +305,7 @@ footer {
         padding: 80px;
     }
 }
-/* Aquí van los estilos del paquete */
+/* Aquí van los estilos de la carta */
 .card-container {
     display: flex;
     justify-content: center;
@@ -333,6 +333,7 @@ footer {
 }
 .card-content {
     padding-inline: 20px;
+    cursor: default;
 }
 .card-content h3 {
     font-size: 24px;
@@ -346,6 +347,10 @@ footer {
 }
 .card-content .country-list {
     color: gray;
+}
+.card-content .days-nights {
+    color: gray;
+    font-size: 18px;
 }
 .card-content ul {
     font-size: 18px;
@@ -364,7 +369,6 @@ footer {
     background-color: beige;
     color: #0F0D0D;
 }
-
 
 
 
