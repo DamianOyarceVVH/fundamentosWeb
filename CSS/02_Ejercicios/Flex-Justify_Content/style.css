@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    padding: 10px;
+    margin: auto;
+    width: 800px;
+    height: 700px;
+    justify-content: space-between;
+    display: flexbox;
+    background-color: rgb(121, 41, 212);
+}
+
+.row {
+    margin: 5px;
+    display: flexbox;
+    background-color: rgb(240, 182, 57);
+    width: 790px;
+    height: 225.5px;
+}
+
+img {
+    margin-inline: 30px;
+    margin-top: 12px;
+    width: 200px;
+    height: 200px;
+    display: flexbox;
+    border-radius: 10px;
+}
+
+#center {
+    margin-inline: 90px;
+}
+
+#beige {
+    background-color: rgb(255,255,255);
+}
