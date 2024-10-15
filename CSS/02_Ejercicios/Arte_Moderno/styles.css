@@ -11,20 +11,62 @@ body{
     background-color: black;
     width: 600px;
     height: 600px;
+    border: 15px solid;
+    border-color: rgb(205,199,194);
 }
 
 .red {
-    left: 170px;
+    left: 150px;
     position: relative;
     background-color: darkred;
-    width: 430px;
-    height: 430px;
+    width: 450px;
+    height: 440px;
 }
 
 .white, .white1 {
-    background-color: green;
+    background-color: whitesmoke;
     position: relative;
     height: 200px;
-    width: 145px;
-    bottom: 430px;
+    width: 130px;
+    bottom: 440px;
+}
+
+.white1 {
+    height: 200px;
+    bottom: 400px;
+}
+
+.blue {
+    background-color: blue;
+    position: relative;
+    height: 140px;
+    width: 130px;
+    bottom: 380px;
+}
+
+.white2 {
+    background-color: whitesmoke;
+    position: relative;
+    height: 140px;
+    width: 390px;
+    bottom: 520px;
+    left: 150px;
+}
+
+.yellow {
+    background-color: gold;
+    position: relative;
+    height: 65px;
+    width: 45px;
+    bottom: 640px;
+    left: 555px;
+}
+
+.white3 {
+    background-color: whitesmoke;
+    position: relative;
+    height: 55px;
+    width: 45px;
+    bottom: 660px;
+    left: 555px;
 }
