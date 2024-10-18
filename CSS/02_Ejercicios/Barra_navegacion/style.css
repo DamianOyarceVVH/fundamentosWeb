@@ -1,0 +1,54 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#nav {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 7px;
+}
+
+a:hover {
+    color: #fefefe;
+}
+
+a {
+    text-decoration: none;
+    color: #cfcece;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+h1 {
+    color: white;
+    font-size: 40px;
+    margin: 10px 0px 10px 30px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: #12acc4;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    border: 4px solid black;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-inline: 15px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.one, .two, .three, .btn {
+    margin-inline: 15px;
+}
+
+.nav-links {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 25px 30px 20px 0px;
+}
