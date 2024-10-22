@@ -1,0 +1,179 @@
+body {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+#nav {
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 7px;
+}
+
+.nav-links a:hover {
+    color: #fefefe;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #cfcece;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.nav-title {
+    color: white;
+    font-size: 40px;
+    margin: 10px 0px 10px 30px;
+}
+
+.btn {
+    font-size: 20px;
+    background-color: #12acc4;
+    color: white;
+    cursor: pointer;
+    box-shadow: 5px 5px rgb(0, 0, 0);
+    border: 4px solid black;
+    padding-top: 0px;
+    padding-left: 15px;
+    padding-inline: 15px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.one, .two, .three, .btn {
+    margin-inline: 15px;
+}
+
+.nav-links {
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 25px 30px 20px 0px;
+}
+
+#perfil {
+    margin: ;
+    width: 530px;
+    border-radius: 5px;
+}
+
+.fondo {
+    background-color: #17a2b8;
+    height: 120px;
+    border-radius: 5px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+#imagenPerfil {
+    margin: 55px 50px;
+    height: 130px;
+}
+
+#perfil-info {
+    border: 4px solid;
+    border-color: #ffffff #d3d3d3 #d3d3d3;
+    border-radius: 5px;
+}
+
+#perfil-info h1 {
+    font-size: 36px;
+    font-weight: 200;
+    margin-top: 60px;
+    margin-bottom: -8px;
+    margin-left: 40px;
+}
+
+#perfil-info h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#perfil-info h3 {
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+#perfil-info h4, a {
+    margin-top: 10px;
+}
+
+#perfil-info a {
+    color: #2d5fbd;
+}
+
+#marcador {
+    height: 20px;
+    margin: 0px 5px;
+    margin-bottom: 0px;
+}
+
+#engranaje {
+    height: 28px;
+    margin: -9px 0px;
+    margin-left: 40px;
+}
+
+#education {
+    width: 530px;
+}
+
+.education-title {
+    color: whitesmoke;
+    border: 4px solid;
+    border-color: #ffffff #d3d3d3 #d3d3d3;
+    border-radius: 5px;
+    background-color: #333333;
+}
+
+.education-title h1 {
+    margin-left: 40px;
+}
+
+.education-info {
+    border: 4px solid;
+    border-color: #ffffff #d3d3d3 #d3d3d3;
+    border-radius: 5px;
+}
+
+.education-info h1, h2, h3 {
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.education-info h1 {
+    margin-bottom: 0px;
+}
+
+.education-info h2 {
+    color: #777777;
+    font-size: 20px;
+    margin-top: 3px;
+}
+
+#container {
+    display: flex;
+    margin: 50px 0px 0px 140px;
+}
+
+#right {
+    margin-left: 30px;
+}
+
+
+#education {
+    width: 530px;
+}
+
+.education-title {
+    color: whitesmoke;
+    border: 4px solid;
+    border-color: #ffffff #d3d3d3 #d3d3d3;
+    border-radius: 5px;
+    background-color: #333333;
+}
