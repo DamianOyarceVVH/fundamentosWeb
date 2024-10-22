@@ -54,7 +54,7 @@ body {
 }
 
 #perfil {
-    margin: ;
+    margin-bottom: 40px;
     width: 530px;
     border-radius: 5px;
 }
@@ -158,7 +158,8 @@ body {
 
 #container {
     display: flex;
-    margin: 50px 0px 0px 140px;
+    margin-top: 35px;
+    justify-content: center;
 }
 
 #right {
@@ -176,4 +177,82 @@ body {
     border-color: #ffffff #d3d3d3 #d3d3d3;
     border-radius: 5px;
     background-color: #333333;
+}
+
+.connection-request-title, .your-connections-title {
+    display: flex;
+    color: whitesmoke;
+    border: 4px solid;
+    border-color: #ffffff #d3d3d3 #d3d3d3;
+    border-radius: 5px;
+    background-color: #333333;
+    padding-inline: 20px;
+    width: 260px;
+}
+
+.amount {
+    background-color: #cccccc;
+    color: black;
+    margin-right: 10px;
+    padding-inline: 12px;
+    padding-bottom: 5px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.connection-request-info, .your-connections-info {
+    border: 4px solid;
+    border-color: #ffffff #d3d3d3 #d3d3d3;
+    border-radius: 5px;
+    width: 300px;
+}
+
+.connection-request-info {
+    margin-bottom: 40px;
+}
+
+.row {
+    display: flex;
+    margin: 10px 0 10px 0;
+}
+
+.row h2 {
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-right: 0px;
+    width: 110px;
+}
+
+.your-connections-info h2{
+    margin-top: 0px;
+}
+
+#user {
+    height: 40px;
+    margin: 5px 0px 0 20px;
+    border-radius: 50%;
+}
+
+.accept, .close {
+    height: 36px;
+    margin-top: 9px;
+    margin-left: 7px;
+}
+
+.accept {
+    margin-left: 20px;
+}
+
+.more {
+    border-top: #d3d3d3 solid;
+}
+
+.your-connections-info h3 {
+    font-size: 20px;
+    margin: 8px 0 8px 25px;
+    width: 330px;
+}
+
+* {
+    aborder: #222222 solid;
 }
