@@ -1,3 +1,21 @@
+* {
+    outline: #000000 3px solid
+}
+
+.nav-bar {
+    display: flex;
+    margin-inline: 120px;
+    margin-block: 40px;
+    align-items: center;
+}
+
+.nav-bar img {
+    width: 180px;
+}
+
+.nav-links a {
+}
+
 .location {
     display: inline-block;
     position: relative;
