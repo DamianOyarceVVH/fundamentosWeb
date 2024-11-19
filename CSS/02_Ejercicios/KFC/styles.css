@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    /*outline: #272329 3px solid;*/
 }
 
 header {
@@ -10,13 +11,13 @@ header {
 .nav-bar {
     display: flex;
     margin-inline: 5%;
-    margin-block: 30px;
+    margin-block: 25px;
     align-items: center;
     justify-content: space-between;
 }
 
 .nav-bar img {
-    width: 160px;
+    width: 20%;
     margin-inline: 40px;
 }
 
@@ -28,6 +29,7 @@ header {
 .right {
     display: flex;
     align-items: center;
+    width: 50%;
 }
 
 .right {
@@ -84,21 +86,25 @@ header {
 .nav-bar input {
     font-size: 16px;
     font-weight: bold;
-    padding-inline: 50px; /* Aumenta espacio para la imagen */
-    padding-block: 5px;
-    border-radius: 25px;
+    padding-inline: 7%; /* Aumenta espacio para la imagen */
+    padding-block: 2.4%;
+    border-radius: 30px;
     background-image: url('img/lupa.png'); /* Ruta de tu imagen */
-    background-size: 22px;
-    background-position: 10px center;
+    background-size: 7%;
+    background-position: 20px center;
+    border: none;
     background-repeat: no-repeat;
-    border: solid 8px #f1f1f1;
     outline: none;
     background-color: #f1f1f1;
 }
 
 .locate {
     background-color: #272329;
-    font-family: fantasy;
+}
+
+.locate button, .locate a {
+    font-family: "Roboto Condensed", serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 }
 
 .location {
@@ -106,14 +112,15 @@ header {
     position: relative;
     margin-inline: 130px;
     padding-block: 28px;
-    font-size: 16;
 }
 
 .location button {
-    font-size: 16px;
+    font-size: 18px;
     background-color: #272329;
     border: none;
     color: white;
+    font-weight: bolder;
+    letter-spacing: -1px;
 }
 
 .location-content {
