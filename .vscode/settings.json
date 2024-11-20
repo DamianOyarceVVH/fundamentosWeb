@@ -1,3 +1,11 @@
 {
     "editor.fontFamily": "JetBrains Mono Medium"
+    "workbench.colorTheme": "2077",
+    "glassit.alpha": 250,
+    "vscode_custom_css.imports": [
+        "file:C:/Users/damia/.vscode/extensions/victoriadrake.kabukicho-0.0.6/lights-on.css"
+    ],
+    "workbench.productIconTheme": "fluent-icons",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.autoSave": "afterDelay"
 }

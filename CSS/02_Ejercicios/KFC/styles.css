@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    outline: #272329 3px solid;*/
 }
 
 header {
@@ -111,9 +110,7 @@ header {
 }
 
 .location {
-    display: inline-block;
-    position: relative;
-    margin-inline: 130px;
+    margin-inline: 4.3%;
     padding-block: 28px;
 }
 
