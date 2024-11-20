@@ -87,6 +87,13 @@ header {
     outline: none;
 }
 
+.right button:hover {
+    background-color: white;
+    color: #272329;
+    border: 3px solid #272329;
+    transform: scale(1.1); /* Aumenta un 10% */
+}
+
 .nav-bar input {
     font-size: 16px;
     font-weight: bold;
@@ -174,6 +181,13 @@ header {
     margin-block: 2.5%;
 }
 
+.menu button:hover {
+    background-color: white;
+    color: #ff0000;
+    border: 3px solid #ff0000;
+    transform: scale(1.1); /* Aumenta un 10% */
+}
+
 .menu-content {
     display: flex;
     justify-content: space-between;
@@ -183,12 +197,18 @@ header {
 .menu h1 {
     font-size: 30px;
     text-align: initial;
-    
 }
 
 .menu-card {
     width: 180px;
     margin-block: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+}
+
+.menu-card:hover {
+    transform: scale(1.05); /* Incrementa el tamaño un 5% */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4); /* Sombra más visible */
 }
 
 .menu-card h3 {
@@ -304,3 +324,9 @@ footer img {
     padding-top: 26px;
     margin-bottom: 0px;
 }
+
+button {
+    transition: all 0.3s ease; /* Suaviza cualquier cambio en 0.3 segundos */
+    cursor: pointer;
+}
+
