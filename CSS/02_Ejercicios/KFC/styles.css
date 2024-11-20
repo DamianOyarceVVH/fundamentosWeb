@@ -9,16 +9,15 @@ header {
 }
 
 .nav-bar {
+    margin: auto;
     display: flex;
-    margin-inline: 5%;
     margin-block: 25px;
-    align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    max-width: 95%;
 }
 
 .nav-bar img {
-    width: 20%;
-    margin-inline: 40px;
+    width: 150px;
 }
 
 .left {
@@ -27,13 +26,15 @@ header {
 }
 
 .right {
+    justify-content: end;
     display: flex;
     align-items: center;
     width: 50%;
+    flex-wrap: wrap;
 }
 
-.right {
-    flex-wrap: wrap;
+.nav-links {
+    margin-inline: 40px;
 }
 
 .nav-links a {
@@ -44,11 +45,11 @@ header {
     color: #272329;
 }
 
-.nav-user, .perfil, .carrito {
-    width: 90px;
+.cupones, .perfil, .carrito {
+    width: 80px;
 }
 
-.nav-user a, .perfil a, .carrito a {
+.cupones a, .perfil a, .carrito a {
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -58,7 +59,7 @@ header {
     color: #444146;
 }
 
-.nav-user img {
+.cupones img {
     margin-inline: auto;
     width: 50px;
 }
@@ -81,13 +82,15 @@ header {
     padding-inline: 20px;
     padding-block: 12px;
     border-radius: 25px;
+    border: none;
+    outline: none;
 }
 
 .nav-bar input {
     font-size: 16px;
     font-weight: bold;
     padding-inline: 7%; /* Aumenta espacio para la imagen */
-    padding-block: 2.4%;
+    padding-block: 16px;
     border-radius: 30px;
     background-image: url('img/lupa.png'); /* Ruta de tu imagen */
     background-size: 7%;
@@ -155,11 +158,10 @@ header {
     margin: 0 auto;
     font-family: "Roboto Condensed", serif;
     src: url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+    letter-spacing: -1px;
 }
 
 .menu button {
-    margin-right: auto;
-    margin-left: auto;
     justify-content: center;
     font-size: 16px;
     font-weight: bold;
@@ -170,6 +172,7 @@ header {
     border-radius: 30px;
     border: none;
     outline: none;
+    margin-block: 2.5%;
 }
 
 .menu-content {
@@ -179,19 +182,22 @@ header {
 }
 
 .menu h1 {
-    font-size: 36px;
+    font-size: 30px;
     text-align: initial;
+    
 }
 
 .menu-card {
-    margin-right: 2%
+    width: 180px;
+    margin-block: 30px;
 }
 
 .menu-card h3 {
     padding-block: 30px;
+    padding-inline: 10px;
 }
 
 .menu-card img {
-    width: 230px;
+    width: 180px;
     border-radius: 6px;
 }
