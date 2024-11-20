@@ -200,7 +200,7 @@ header {
 }
 
 .menu-card {
-    width: 180px;
+    width: 220px;
     margin-block: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-radius: 5px;
@@ -217,7 +217,7 @@ header {
 }
 
 .menu-card img {
-    width: 180px;
+    width: 220px;
     border-radius: 6px;
 }
 
