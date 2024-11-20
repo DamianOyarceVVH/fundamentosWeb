@@ -1,6 +1,7 @@
 * {
     margin: 0px;
     padding: 0px;
+    outline: #272329 3px solid;*/
 }
 
 header {
@@ -10,6 +11,7 @@ header {
 .nav-bar {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     margin-block: 25px;
     justify-content: space-around;
     max-width: 95%;
@@ -150,7 +152,7 @@ header {
 }
 
 .menu {
-    width: 84%;
+    width: 85%;
     text-align: center;
     margin: 0 auto;
     font-family: "Roboto Condensed", serif;
@@ -197,4 +199,108 @@ header {
 .menu-card img {
     width: 180px;
     border-radius: 6px;
+}
+
+footer {
+    margin: auto;
+    width: 85%;
+    margin-block: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+footer img {
+    width: 150px;
+    margin-block: 1%;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info p {
+    font-size: 16px;
+    color: #444146;
+}
+
+.info h4 {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.info a {
+    text-decoration: none;
+    color: #444146;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 65%;
+    justify-content: space-between;
+}
+
+.info-card {
+    width: 235px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.info-card-t {
+    width: 180px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.info-card-tr {
+    width: 130px;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.info-card, .info-card-t, .info-card-tr {
+    margin-block: 2%;
+}
+
+.red {
+    margin-block: 16px;
+    vertical-align: middle;
+    margin-right: 20px;
+    flex-wrap: wrap;
+}
+
+.red img {
+    width: 30px;
+    flex-wrap: wrap;
+    margin-block: 0px;
+}
+
+.download {
+    height: 100%;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.download img {
+    margin: 5px;
+    vertical-align: middle;
+    margin-block: 25px;
+    flex-wrap: wrap;
+}
+
+.bottom {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px #dfdfdf solid;
+    padding-top: 26px;
+    margin-bottom: 0px;
 }
