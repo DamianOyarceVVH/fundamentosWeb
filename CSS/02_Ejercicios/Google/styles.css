@@ -1,0 +1,37 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: 3px solid gray;
+}
+
+header {
+    margin-block: 8px;
+    margin-inline: 20px;
+    text-decoration: none;
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+}
+
+header img {
+    width: 85px;
+}
+
+header ul, header li {
+    display: flex;
+    align-items: center;
+    margin-inline: 3px;
+}
+
+header a {
+    text-decoration: none;
+    padding-block: 20px;
+    padding-inline: 15px;
+    color: #212121c4;
+}
+
+header a:focus {
+    border: 3px #1a73e8 solid;
+}
