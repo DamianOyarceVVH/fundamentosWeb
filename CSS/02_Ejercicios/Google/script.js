@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// script.js
 document.addEventListener("DOMContentLoaded", () => {
     const headings = document.querySelectorAll(".footer-heading");
 

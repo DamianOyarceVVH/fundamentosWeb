@@ -1,37 +1,354 @@
+/* styles.css */
 * {
-    margin: 0px;
-    padding: 0px;
-    outline: 3px solid gray;
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    outline: #333 3px solid;*/
+}
+
+body {
+}
+
+.blue {
+    color: #4285f4;
+}
+
+.red {
+    color: #ea4335;
+}
+
+.green {
+    color: #34a853;
+}
+
+.yellow {
+    color: #e37400;
 }
 
 header {
     margin-block: 8px;
-    margin-inline: 20px;
+    margin-inline: 14px;
     text-decoration: none;
-    display: flex;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 18px;
-}
-
-header img {
-    width: 85px;
-}
-
-header ul, header li {
     display: flex;
     align-items: center;
-    margin-inline: 3px;
-}
-
-header a {
-    text-decoration: none;
-    padding-block: 20px;
-    padding-inline: 15px;
-    color: #212121c4;
+    justify-content: start;
+    font-size: 17px;
+    z-index: 1000;
 }
 
 header a:focus {
     border: 3px #1a73e8 solid;
+    border-radius: 6px;
+}
+
+.logo img, .menu-logo img {
+    width: 75px;
+    align-items: center;
+    vertical-align: middle;
+    margin-block: 15px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin-inline: 3px;
+    padding-block: 12px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-decoration: none;
+    padding-block: 12px;
+    padding-inline: 12px;
+    color: #212121c4;
+}
+
+/* Botón de menú para pantallas pequeñas */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Logo del menú lateral: oculto en pantallas grandes */
+.menu-logo {
+    display: none; /* Oculta el logo por defecto */
+    text-align: center;
+    padding: px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 250px;
+        background-color: #fff;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        padding-top: 20px;
+        overflow-y: auto;
+    }
+
+    .nav.open {
+        transform: translateX(0);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 0px;
+    }
+
+    .menu-logo {
+        display: block; /* Muestra el logo solo en pantallas pequeñas */
+    }
+}
+
+main {
+    text-align: center;
+    width: 72%;
+    margin: auto;
+}
+
+.informacion {
+    font-size: 18px;
+    margin: auto;
+}
+
+.informacion h2 {
+    margin: auto;
+    width: 80%;
+    margin-top: 60px;
+}
+
+.informacion img {
+    width: 100%;
+    margin-top: 60px;
+}
+
+.informacion h4 {
+    margin: 30px;
+}
+
+.informacion a {
+    padding-inline: 12px;
+    padding-block: 12px;
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.informacion a:focus {
+    border: 3px #1a73e8 solid;
+    border-radius: 6px;
+}
+
+.productos {
+    margin: auto;
+    margin-top: 10%;
+    margin-bottom: 25px;
+}
+
+.productos h1 {
+    font-size: 55px;
+}
+
+.prod-btn {
+    margin-block: 32px;
+}
+
+.prod-btn button {
+    font-size: 16px;
+    font-weight: bold;
+    padding-block: 12px;
+    padding-inline: 20px;
+    margin-inline: 10px;
+    border-radius: 3px;
+    outline: none;
+    margin-block: 8px;
+}
+
+.prod {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+}
+
+.asist {
+    border: 1px solid rgb(189, 189, 189);
+    color: #1a73e8;
+    background-color: white;
+}
+
+.prod-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prod-card {
+    width: 500px;
+    border-radius: 12px;
+}
+
+.prod-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.prod-card h2 {
+    margin-block: 15px;
+    padding-inline: 10px;
+    font-size: 28px;
+    color: black;
+}
+
+.prod-card a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+.compromisos {
+    margin: auto;
+    margin-block: 8%;
+}
+
+.compromisos h1 {
+    font-size: 55px;
+}
+
+.comp-btn {
+    margin-block: 32px;
+}
+
+.comp-btn button {
+    font-size: 16px;
+    font-weight: bold;
+    padding-block: 12px;
+    padding-inline: 20px;
+    margin-inline: 10px;
+    border-radius: 3px;
+    outline: none;
+    margin-block: 8px;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+}
+
+.comp-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.comp-card {
+    width: 500px;
+    border-radius: 12px;
+}
+
+.comp-card img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.comp-card h2 {
+    margin-block: 15px;
+    padding-inline: 10px;
+    font-size: 28px;
+    color: black;
+}
+
+.comp-card a {
+    text-decoration: none;
+    color: #1a73e8;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    width: 90%;
+    margin: auto;
+}
+
+.footer-container {}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-heading {
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    list-style: none;
+    margin: 10px 0 0 0;
+    padding: 0;
+    display: block;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 0; /* Oculta por defecto */
+    
+}
+
+.footer-content.expanded {
+    max-height: 300px; /* Se ajusta a la altura del contenido */
+}
+
+.footer-content li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Para pantallas grandes */
+@media (min-width: 768px) {
+    .footer-content {
+        display: block; /* Siempre visible */
+        max-height: none; /* Sin restricciones */
+        width: 300px;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-heading {
+        cursor: default;
+    }
+}
+
+.follows {
+    padding-block: 20px;
+    display: flex;
+}
+
+.follows svg {
+    margin-inline: 15px;
 }
