@@ -5,9 +5,7 @@
     font-weight: 600;
     font-style: normal;
     font-optical-sizing: auto;
-    letter-spacing: px;
-    /*outline: #333 3px solid;*/
-    /*outline: none;*/
+    outline: none;
 }
 
 body {
