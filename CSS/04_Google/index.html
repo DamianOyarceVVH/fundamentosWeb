@@ -3,16 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="img/Google.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,500;1,500&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <title>Google - Información</title>
 </head>
 <body>
-    <header>
+    <!-- Menú superior -->
+    <header>  
         <button class="menu-toggle" aria-label="Abrir menú">☰</button>
         <div class="logo">
             <a href="#"><img src="img/google_logo.svg" alt="Google Logo"></a>
@@ -22,7 +24,7 @@
                 <a href="#"><img src="img/google_logo.svg" alt="Google Logo"></a>
             </div>
             <ul class="nav-list">
-                <span class="main"><li><a href="#">Información</a></li></span>
+                <span class="main"><li><a href="#">Información</a></li></span> <!-- Clase única para la página en uso -->
                 <li><a href="https://about.google/google-in-spain/">Google en España</a></li>
                 <li><a href="https://about.google/products/">Productos</a></li>
                 <li><a href="https://about.google/commitments/">Compromisos</a></li>
@@ -30,22 +32,25 @@
             </ul>
         </nav>
     </header>
-
-    <div class="overlay"></div>
-
+    <!-- Div para el sombreado total fuera del menu lateral -->
+    <div class="overlay"></div> 
+    <!-- Contenido principal -->
     <main>
+        <!-- Primera sección: Información -->
         <section class="informacion">
             <h2>Nuestra misión es <span class="blue">organizar</span> la <span class="red">información</span> del mundo para que <span class="green">todos puedan acceder a ella</span> y <span class="yellow">usarla.</span></h2>
             <img src="img/Background.png" alt="Background">
             <span class="info"><h2>Conoce nuestras últimas actualizaciones en IA, noticias sobre productos y anuncios de la compañía.</h2></span>
             <h4><a href="https://blog.google/intl/es-es/?utm_source=about&utm_medium=referral&utm_campaign=amber" target="_blank">Más información</a></h4>
         </section>
+        <!-- Segunda sección: Productos Google -->
         <section class="productos">
             <h1>Hazte la vida más fácil con ayuda de nuestros productos</h1>
             <div class="prod-btn">
                 <a class="prod" href="https://about.google/products/">Ver todos nuestros productos</a>
                 <a class="asist" href="https://support.google.com/" target="_blank">Obtener asistencia con los productos</a>
             </div>
+            <!-- Cartas de información -->
             <div class="prod-cards">
                 <div class="prod-card">
                     <a href="https://lens.google/intl/es/" target="_blank"><img src="img/Perrito.jpg">
@@ -59,27 +64,31 @@
                 </div>
             </div>
         </section>
+        <!-- Tercera sección: Compromisos y artículos -->
         <section class="compromisos">
             <h1>Tenemos el compromiso de mejorar las vidas de las personas</h1>
             <div class="comp-btn">
                 <a href="https://about.google/commitments/">Mira nuestros compromisos</a>
             </div>
+            <!-- Cartas de artículos -->
             <div class="comp-cards">
                 <div class="comp-card">
                     <a href="https://sustainability.google/intl/es-419/" target="_blank"><img src="img/Molinos.jpg">
-                    <h2>Usa la cámara o una imagen para encontrar lo que buscas</h2>
-                    <h4>Ir a Google Lens</h4></a>
+                    <h2>Neutros en carbono desde 2007. Libres de carbono en 2030.</h2>
+                    <h4>Saber más</h4></a>
                 </div>
                 <div class="comp-card">
                     <a href="https://grow.google/intl/es/google-certificates" target="_blank"><img src="img/Oficinista_formal.jpg">
-                    <h2>Transforma el modo de trabajo colaborativo con Google Workspace</h2>
+                    <h2>Te ayudamos a triunfar en el mundo digital con los Certificados Profesionales de Google</h2>
                     <h4>Saber más</h4></a>
                 </div>
             </div>
         </section>
     </main>
+    <!-- Pie de página -->
     <footer>
-        <div class="follows">
+        <!-- Cuarta sección: Redes Sociales -->
+        <section class="follows">
             <h4>Síguenos</h4>
             <div class="follows-links">
                 <a href="https://instagram.com/google/" target="_blank"><svg alt="Instagram" class="" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#000">
@@ -93,8 +102,9 @@
                 <a href="https://www.linkedin.com/company/google" target="_blank"><svg alt="LinkedIn" class="" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"></path></svg></a>
             </div>
-        </div>
-        <div class="footer-container">
+        </section>
+        <!-- Quinta sección: Más (mucha más) información -->
+        <section class="footer-container">
             <div class="footer-section">
                 <h4 class="footer-heading" tabindex="0">Más información</h4>
                 <ul class="footer-content">
@@ -128,16 +138,16 @@
                     <li><a href="https://about.google/how-our-business-works/">Cómo funciona nuestro negocio</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="global">
+        </section>
+        <!-- Sexta sección: Información general -->
+        <section class="global">
             <a href="#" class="gray-logo"><img src="img/google_gray-logo.svg"></a>
             <ul>
                 <div class="help"><li><a href="https://support.google.com/?hl=es" target="_blank"><img src="img/help.svg">Ayuda</a></li></div>
                 <li><a href="https://www.google.com/policies/privacy/" target="_blank">Privacidad</a></li>
                 <li><a href="https://www.google.com/policies/terms/" target="_blank">Condiciones</a></li>
             </ul>
-        </div>
+        </section>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>

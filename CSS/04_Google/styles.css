@@ -1,14 +1,10 @@
 /* styles.css */
 * {
     margin: 0;
-    font-family: "Roboto", serif;
-    font-weight: 600;
-    font-style: normal;
+    font-family: "Roboto Flex", sans-serif;
+    font-style: normal;;
     font-optical-sizing: auto;
     outline: none;
-}
-
-body {
 }
 
 .blue {
@@ -34,7 +30,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: start;
-    font-size: 17px;
+    font-size: 18px;
     z-index: 3;
     transition: all 0.8 ease;
 }
@@ -45,7 +41,7 @@ header a:focus {
 }
 
 .logo img, .menu-logo img {
-    width: 75px;
+    width: 90px;
     align-items: center;
     vertical-align: middle;
     margin-block: 14px;
@@ -71,20 +67,20 @@ header a:focus {
 }
 
 .nav-list li a {
-    font-weight: bold;
     transition: color 0.3s;
     text-decoration: none;
     padding-block: 12px;
     padding-inline: 12px;
     color: #212121c4;
+    font-weight: bold;
 }
 
 .nav-list li a:hover {
-    color: black;
+    color: #202124;
 }
 
 .main {
-    text-decoration: underline #1a73e8;
+    text-decoration: underline #1a73e8 2px;
     text-underline-offset: 20px;
 }
 
@@ -159,19 +155,21 @@ header a:focus {
 
 main {
     text-align: center;
-    width: 72%;
+    width: 70%;
     margin: auto;
 }
 
 .informacion {
-    font-size: 18px;
     margin: auto;
 }
 
 .informacion h2 {
+    font-size: 34px;
+    font-weight: 400;
     margin: auto;
     width: 80%;
     margin-top: 60px;
+    color: #202124;
 }
 
 .informacion img {
@@ -180,6 +178,8 @@ main {
 }
 
 .informacion h4 {
+    font-size: 18px;
+    font-weight: 500;
     margin: 30px;
 }
 
@@ -207,7 +207,9 @@ main {
 }
 
 .productos h1 {
-    font-size: 55px;
+    font-size: 80px;
+    font-weight: 500;
+    color: #202124;
 }
 
 .prod-btn {
@@ -218,12 +220,12 @@ main {
 }
 
 .prod-btn a {
-    font-size: 16px;
-    font-weight: bold;
-    padding-block: 12px;
-    padding-inline: 20px;
+    font-size: 19px;
+    font-weight: 500;
+    padding-block: 16px;
+    padding-inline: 26px;
     margin-inline: 10px;
-    border-radius: 3px;
+    border-radius: 6px;
     outline: none;
     margin-block: 8px;
     text-decoration: none;
@@ -258,11 +260,10 @@ main {
 }
 
 .prod-card {
-    width: 500px;
+    width: 540px;
     border-radius: 12px;
     margin-block: 10px;
 }
-
 
 .prod-card img {
     width: 100%;
@@ -272,13 +273,16 @@ main {
 .prod-card h2 {
     margin-block: 15px;
     padding-inline: 10px;
-    font-size: 28px;
+    font-size: 32px;
     color: black;
+    font-weight: 400;
 }
 
 .prod-card a {
     text-decoration: none;
     color: #1a73e8;
+    font-size: 18px;
+    margin-block: 10px;
 }
 
 .compromisos {
@@ -287,7 +291,9 @@ main {
 }
 
 .compromisos h1 {
-    font-size: 55px;
+    font-size: 80px;
+    color: #202124;
+    font-weight: 500;
 }
 
 .comp-btn {
@@ -296,18 +302,18 @@ main {
 }
 
 .comp-btn a {
-    font-size: 16px;
-    font-weight: bold;
-    padding-block: 12px;
-    padding-inline: 20px;
+    font-size: 19px;
+    padding-block: 16px;
+    padding-inline: 26px;
     margin-inline: 10px;
-    border-radius: 3px;
+    border-radius: 6px;
     outline: none;
     margin-block: 8px;
     background-color: #1a73e8;
     color: white;
     border: none;
     text-decoration: none;
+    font-weight: 500;
 }
 
 .comp-btn a:focus {
@@ -327,7 +333,7 @@ main {
 }
 
 .comp-card {
-    width: 500px;
+    width: 580px;
     border-radius: 12px;
     margin-block: 10px;
 }
@@ -340,28 +346,32 @@ main {
 .comp-card h2 {
     margin-block: 15px;
     padding-inline: 10px;
-    font-size: 28px;
+    font-size: 32px;
     color: black;
+    font-weight: 400;
 }
 
 .comp-card a {
     text-decoration: none;
     color: #1a73e8;
+    font-size: 18px;
 }
 
 footer {
     background-color: #f8f9fa;
     padding: 20px;  
     margin: auto;
+    font-size: 18px;
 }
 
 .footer-container, .follows, .global {
-    width: 90%;
+    width: 85%;
     margin: auto;
 }
 
 .footer-container h4 {
-    font-size: 16px;
+    font-size: 18px;
+    color: #202124;
 }
 
 .footer-container {
@@ -371,15 +381,13 @@ footer {
 
 .footer-section {
     margin-bottom: 20px;
+
 }
 
 .footer-heading {
-    font-size: 1.2rem;
     cursor: pointer;
     margin: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .footer-content {
@@ -390,7 +398,6 @@ footer {
     transition: max-height 0.3s ease;
     overflow: hidden;
     max-height: 0; /* Oculta por defecto */
-    
 }
 
 .footer-content.expanded {
@@ -399,12 +406,12 @@ footer {
 
 .footer-content li a {
     text-decoration: none;
-    color: #333;
+    color: #5f6368;
     font-weight: bold;
 }
 
 .footer-content li {
-    margin-block: 16px;
+    margin-block: 22px;
 }
 
 .footer-content li a:focus {
@@ -413,7 +420,7 @@ footer {
 }
 
 .footer-content li a:hover {
-    color: black;
+    color: #202124;
 }
 
 /* Para pantallas grandes */
@@ -438,6 +445,7 @@ footer {
     padding-block: 20px;
     display: flex;
     border-bottom: 1px solid #ddd;
+    color: #202124;
 }
 
 .follows svg {
@@ -446,6 +454,7 @@ footer {
 
 .follows-links {
     margin-inline: 10px;
+    display: flex;
 } 
 
 .global {
@@ -466,8 +475,8 @@ footer {
     text-decoration: none;
     display: flex;
     margin-inline: 15px;
+    color: #5f6368;
     font-weight: bold;
-    color: #333;
 }
 
 .global a:focus {
@@ -476,7 +485,7 @@ footer {
 }
 
 .global li a:hover {
-    color: black;
+    color: #202124;
 }
 
 .global li img {
